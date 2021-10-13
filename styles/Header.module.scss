@@ -1,0 +1,220 @@
+.navbar {
+    position: fixed;
+    padding: 0% 0% 0% 0%;
+    margin: 0%;
+    width: 100%;
+    background-color: crimson;
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    z-index: 999;
+    .maxWidth {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+        }
+        nav {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
+
+.navbar1 {
+    position: fixed;
+    padding: 0% 0% 0% 0%;
+    margin: 0%;
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    .maxWidth {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            font-size: 25px;
+            font-weight: 600;
+            color: white;
+            span{
+                color: crimson;
+            }
+        }
+        nav {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
+
+.navButton {
+    padding: 10px;
+    a {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        color: white;
+    }
+}
+.maxWidth {
+    padding: 0px 80px;
+    margin: auto;
+}
+.fabars {
+    display: none;
+}
+.fatimes {
+    display: none;
+}
+
+.angleUpHide{
+    display: none;
+}
+.angleUp{
+    transition: all 0.3s ease;
+    height: 50px;
+    width: 50px;
+    background-color: crimson;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    border-radius: 5px;
+    .angleUpIcon{
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+        color: white;
+    }
+}
+@media (max-width: 1024px) {
+    .navbar {
+        // height: 8vh;
+        .maxWidth {
+            .logo {
+                font-size: 45px;
+                font-weight: 600;
+                color: white;
+            }
+            .nav {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                height: 100vh;
+                width: 100%;
+                z-index: 10;
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s ease;
+            }
+            .nav1 {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100%;
+                z-index: 10;
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+    .navbar1 {
+        // height: 8vh;
+        .maxWidth {
+            .logo {
+                font-size: 45px;
+                font-weight: 600;
+                color: white;
+            }
+            .nav {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                height: 100vh;
+                width: 100%;
+                z-index: 10;
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s ease;
+            }
+            .nav1 {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100%;
+                z-index: 10;
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+    .navButton {
+        padding: 20px;
+        a {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 35px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+        a:hover{
+            color: crimson;
+            transition: color 0.3s ease;
+        }
+    }
+    .maxWidth {
+        padding: 0px 50px;
+        margin: auto;
+    }
+    .fabars {
+        display: block;
+        height: 30px;
+        width: 30px;
+        color: white;
+    }
+    .fatimes {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        height: 40px;
+        width: 40px;
+        color: white;
+        z-index: 11;
+        margin-top: 100px;
+        margin-right: 100px;
+    }
+}
